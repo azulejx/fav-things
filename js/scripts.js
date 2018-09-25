@@ -1,3 +1,5 @@
+// biz logic
+
 var thing1 = "";
 var thing2 = "";
 var thing3 = "";
@@ -8,6 +10,8 @@ var final = [];
 var finalArray = function() {
   final.push(allthings[1], allthings[0], allthings[2])
 };
+
+// ui logic
 
 $(document).ready(function() {
   $("form#favform").submit(function(event) {
@@ -24,6 +28,10 @@ $(document).ready(function() {
     // allthings.push(thing4);
 
     finalArray();
+
+    $("#first").text(final[0]);
+    $("#second").text(final[1]);
+    $("#third").text(final[2]);
 
     $("#fourth").text(final);
     // console.log(allthings);
