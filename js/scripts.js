@@ -18,10 +18,10 @@ $(document).ready(function() {
     thing3 = $("#favthing3").val();
     thing4 = $("#favthing4").val();
 
-    allthings.push(thing1);
-    allthings.push(thing2);
-    allthings.push(thing3);
-    allthings.push(thing4);
+    allthings.push(thing1, thing2, thing3, thing4);
+    // allthings.push(thing2);
+    // allthings.push(thing3);
+    // allthings.push(thing4);
 
     finalArray();
 
